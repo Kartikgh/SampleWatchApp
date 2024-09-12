@@ -76,7 +76,6 @@ struct ContentView: View {
     }
     
     func save() {
-        //dump(notes)
         do {
             let data = try JSONEncoder().encode(notes)
             let url = getDocumentDirectory().appendingPathComponent("notes")
